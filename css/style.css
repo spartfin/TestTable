@@ -1,0 +1,125 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #333;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.header,
+.table,
+.footer {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+header {
+  background: linear-gradient(#fff, #ff9900);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+}
+
+.header h1 {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.table__list {
+  border-collapse: collapse;
+}
+
+.table__list td {
+  width: 200px;
+  height: 45px;
+  border: 1px solid black;
+  word-break: break-all;
+  padding: 5px;
+  text-align: center;
+}
+
+.table_button {
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+}
+
+.table_button:hover {
+  opacity: 0.5;
+}
+
+footer {
+  background-color: #ffcc66;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+}
+
+.footer h2 {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
